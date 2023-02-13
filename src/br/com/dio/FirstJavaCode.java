@@ -5,8 +5,6 @@ public class FirstJavaCode {
         Gato gato = new Gato();
         System.out.println(gato);
 
-        Livro livro1 = new Livro(nome: "O Poder da Ação", numPaginas: 300);
-        System.out.println(livro1);
 
 
     }
