@@ -2,45 +2,47 @@ package br.com.dio;
 import br.com.dio.model.Gato;
 public class FirstJavaCode {
     public static void main(String[] args) {
-
         Gato gato = new Gato();
-
         System.out.println(gato);
 
-        book = new Book(name:
+        Livro livro1 = new Livro(nome: "O Poder da Ação", numPaginas: 300);
+        System.out.println(livro1);
+
+
     }
+
 }
 
-class Book {
-    private String name;
-    private Integer numPages;
+class Livro {
+    private String nome;
+    private Integer numPaginas;
 
-    public Book(String name, Integer numPages) {
-        this.name = name;
-        this.numPages = numPages;
+    public Livro(String nome, Integer numPaginas) {
+        this.nome = nome;
+        this.numPaginas = numPaginas;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public Integer getNumPages() {
-        return numPages;
+    public Integer getNumPaginas() {
+        return numPaginas;
     }
 
-    public void setNumPages(Integer numPages) {
-        this.numPages = numPages;
+    public void setNumPaginas(Integer numPaginas) {
+        this.numPaginas = numPaginas;
     }
 
     @Override
     public String toString() {
-        return "Book{" +
-                "name='" + name + '\'' +
-                ", numPages=" + numPages +
+        return "Livro{" +
+                "nome='" + nome + '\'' +
+                ", numPaginas=" + numPaginas +
                 '}';
     }
 }
